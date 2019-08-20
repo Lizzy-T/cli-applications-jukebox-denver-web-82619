@@ -36,7 +36,7 @@ end
 
 def run(songs)
   puts "Please enter a commands:"
-  command = gets.strip
+  command = gets.chomp
   until command == "exit"
     if command == "help"
       help
