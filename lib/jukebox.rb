@@ -17,10 +17,11 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
-
+help
 def list (songs)
   songs.each_with_index {|song, index|
     num = index + 1
     puts "#{num}. song"
   }
 end
+list(songs)
