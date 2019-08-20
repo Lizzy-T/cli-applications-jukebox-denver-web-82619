@@ -38,7 +38,7 @@ def play (songs)
       puts "playing #{song}"
     elsif choice.to_i == num
       puts "playing #{song}"
+    end
   end
-
 end
 play(songs)
