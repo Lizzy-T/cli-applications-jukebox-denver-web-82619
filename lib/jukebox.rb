@@ -21,7 +21,7 @@ end
 help
 
 def list (songs)
-  songs.each_with_index {|song, index + 1|
+  songs.each_with_index {|song, index|
     num = index + 1
     puts "#{num}. #{song}"
   }
@@ -32,10 +32,12 @@ list(songs)
 def play (songs)
   puts "Please enter a song name or number:"
   choice = gets.strip
-  songs.each do |song|
+  songs.each_with_index do |song, index|
+    num = index + 1
     if song == choice
       puts "playing #{song}"
-    end
+    elsif choice.to_i == num
+      puts "playing #{song}"
   end
 
 end
