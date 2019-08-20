@@ -29,12 +29,12 @@ def play (songs)
   puts "Please enter a song name or number:"
   choice = gets.strip
 
-  songs.each_with_index do |song, index|
+  valid_song = songs.each_with_index do |song, index|
     num = index + 1
     if song == choice
-      valid_song =  "playing #{song}"
+        "playing #{song}"
     elsif choice.to_i == num
-      valid_song = "playing #{song}"
+        "playing #{song}"
     end
   end
   if valid_song
