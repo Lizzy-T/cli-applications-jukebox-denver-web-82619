@@ -37,6 +37,6 @@ def play (songs)
       puts "playing #{song}"
     end
   end
-  
+
 end
 play(songs)
