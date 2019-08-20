@@ -28,20 +28,17 @@ end
 def play (songs)
   puts "Please enter a song name or number:"
   choice = gets.strip
-
+  valid_song = "Invalid input, please try again"
   songs.each_with_index do |song, index|
     num = index + 1
     if song == choice
-        "playing #{song}"
+        valid_song = "playing #{song}"
     elsif choice.to_i == num
-        "playing #{song}"
+        valid_song = "playing #{song}"
     end
   end
-  if valid_song
-    puts valid_song
-  else
-    puts "Invalid input, please try again"
-  end
+  puts valid_song
+  valid_song
 end
 play(songs)
 
