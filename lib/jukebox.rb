@@ -41,4 +41,4 @@ def play (songs)
   end
 
 end
-#play(songs)
+play(songs)
