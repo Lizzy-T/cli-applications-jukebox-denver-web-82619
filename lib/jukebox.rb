@@ -20,9 +20,9 @@ def play (songs)
   songs.each_with_index do |song, index|
     num = index + 1
     if song == choice
-        valid_song = "playing #{song}"
+        valid_song = "Playing #{song}"
     elsif choice.to_i == num
-        valid_song = "playing #{song}"
+        valid_song = "Playing #{song}"
     end
   end
   puts valid_song
