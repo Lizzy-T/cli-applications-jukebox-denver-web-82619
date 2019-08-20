@@ -21,7 +21,7 @@ help
 def list (songs)
   songs.each_with_index {|song, index|
     num = index + 1
-    puts "#{num}. song"
+    puts "#{num}. #{song}"
   }
 end
 list(songs)
